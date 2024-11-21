@@ -127,7 +127,7 @@ return `
 
  // WFS layer variables
  let wfsLayer;
- const geoserverWfsUrl = "http://192.168.0.104:8080/geoserver/ap_projects/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ap_plots_project:approved_plots_final&outputFormat=application/json";
+ const geoserverWfsUrl = "http://192.168.0.104:8080/geoserver/ap_projects/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ap_projects:approved_plots_final&outputFormat=application/json";
 
  // Fetch suggestions based on user input
  function fetchSuggestions() {
