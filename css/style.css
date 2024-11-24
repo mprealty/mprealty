@@ -29,16 +29,7 @@ body, html {
     margin: 4px 0;
     font-size: 14px;
 }
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    /* Style adjustments for mobile devices */
-    body {
-        font-size: 14px;
-    }
-    .leaflet-container {
-        height: 300px; /* Example: adjust map size for mobile */
-    }
-}
+
 .search-container {
     position: absolute;
     top: 10px;
