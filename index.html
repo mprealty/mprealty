@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mprealty.live</title>
 
@@ -19,17 +20,19 @@
      <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
      
      <!-- FontAwesome -->
-     <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />     
+     <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+     <!-- my https css link  -->
+     <link rel="stylesheet" href="https://mprealty.live/css/style.css" />
  
      <!-- custom css -->
      <link rel="stylesheet" href="./css/style.css" />     
 
 </head>
-<body>
-    <div id="loading">... MP Realty <br> Loading Map ...</div>    
+<body>    
     <div class="search-container">
-        <input type="text" id="plotCodeInput" placeholder="09/09/2009/UDA / GORANTLA" oninput="fetchSuggestions()" />
-        <button onclick="clearSearch()">X</button>
+        <input type="text" id="plotCodeInput" placeholder="9/09/2009/UDA / GORANTLA" oninput="fetchSuggestions()" />        
+        <button onclick="clearSearch()">X</button>        
         <div id="suggestionBox" class="suggestion-box"></div>
     </div>
     <div id="map"></div>
@@ -55,6 +58,8 @@
 <!-- jquery for popup link  -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+<!-- my https js link  -->
+<script src="https://mprealty.live/js/main.js"></script>
 
 <!-- custom js -->
 <script src="./js/main.js"></script>
