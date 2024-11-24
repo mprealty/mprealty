@@ -80,7 +80,7 @@ const wmsParams = {
 };
 
 return (
- "https://mprealty.live/geoserver/ap_projects/wms?" +
+ "http://192.168.0.104:8080/geoserver/ap_projects/wms?" +
  Object.keys(wmsParams)
      .map((key) => `${key}=${encodeURIComponent(wmsParams[key])}`)
      .join("&")
@@ -105,7 +105,7 @@ return `
  }
 
  // Add WMS layer
- const wmsLayer = L.tileLayer.wms("https://mprealty.live/geoserver/ap_projects/wms?", {
+ const wmsLayer = L.tileLayer.wms("http://192.168.0.104:8080/geoserver/ap_projects/wms?", {
      maxZoom: 23,
      layers: "ap_projects:ap approved plots group",
      format: "image/png",
@@ -127,7 +127,7 @@ return `
 
  // WFS layer variables
  let wfsLayer;
- const geoserverWfsUrl = "https://mprealty.live/geoserver/ap_projects/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ap_projects:approved_plots_final&outputFormat=application/json";
+ const geoserverWfsUrl = "http://192.168.0.104:8080/geoserver/ap_projects/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ap_projects:approved_plots_final&outputFormat=application/json";
 
  // Fetch suggestions based on user input
  function fetchSuggestions() {
